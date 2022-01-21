@@ -14,7 +14,7 @@ func getFileSystem() http.FileSystem {
 	log.Println("using embed mode")
 	fileSys, err := fs.Sub(embeddedFiles, "static")
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
 	return http.FS(fileSys)
