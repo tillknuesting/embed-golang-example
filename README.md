@@ -1,0 +1,1 @@
+# exembed-golang-example
